@@ -8,3 +8,13 @@ description: Test
 url: 'http://example.org'
 imports:
   crystal/npm: ~0.3.1
+outputs:
+  - generator: npm.PackageGenerator
+    spec:
+      name: myapp
+      version: 1.0.0
+      description: "myapp's description"
+      dependencies:
+        express: ~4.13.3
+        grunt: ~0.4.5
+        sequelize: ~3.5.1
